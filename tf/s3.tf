@@ -60,7 +60,7 @@ resource "aws_s3_bucket_acl" "chitralimbu_root_bucket_acl" {
 resource "aws_s3_bucket_website_configuration" "chitralimbu_root_website_config" {
   bucket = aws_s3_bucket.chitralimbu_root_bucket.bucket
   redirect_all_requests_to {
-    host_name = "https://www.${var.domain_name}"
+    host_name = "www.${var.domain_name}"
   }
 }
 
