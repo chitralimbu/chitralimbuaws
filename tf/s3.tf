@@ -1,7 +1,7 @@
 #https bucket
 resource "aws_s3_bucket" "chitralimbu_bucket" {
   bucket = "www.${var.bucket_name}"
-  tags = var.common_tags
+  tags   = var.common_tags
 }
 
 resource "aws_s3_bucket_acl" "chitralimbu_bucket_acl" {
