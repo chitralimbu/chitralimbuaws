@@ -1,0 +1,63 @@
+{
+  "title": "AWS",
+  "sub-title": "Static web hosting on S3",
+  "created": "2023-11-06 19:15",
+  "updated": "2023-11-06 19:15",
+  "version": 1,
+  "content": [
+    {
+      "heading": "Using terraform",
+      "content": [
+        {
+          "title" : "Configure terraform",
+          "content" : [
+            {
+              "type": "list",
+              "list-items": [
+                "1", "2", "3"
+              ]
+            },
+            {
+              "type": "text",
+              "text": "This is a test text"
+            }
+          ]
+        },
+        {
+          "title" : "Setting up Route53",
+          "content": [
+            {
+              "type": "code",
+              "code": "print(\"hello world!\")"
+            },
+            {
+              "type": "code-block",
+              "code": "gist-url"
+            },
+            {
+              "type": "image",
+              "url": "image-url"
+            }
+          ]
+        },
+        {
+          "title" : "Setting up SSL certificate",
+          "content": []
+        }
+      ]
+    },
+    {
+      "heading": "Using AWS console",
+      "content" : [
+        {
+          "title" : "Set up S3",
+          "content": []
+        },
+        {
+          "title" : "Set up cloudfront",
+          "content": []
+        }
+      ]
+    }
+  ]
+}

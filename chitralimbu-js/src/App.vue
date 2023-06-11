@@ -26,31 +26,11 @@
         ></SideItem>
       </div>
     </div>
-    <div style="margin-left: 25%; padding: 1px 16px; height: 1000px">
+    <div class="content">
       <router-view />
     </div>
   </nav>
 </template>
-
-<style scoped>
-body {
-  margin: 0;
-}
-.side-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-.no-arrow:after {
-  display: none;
-}
-</style>
 <script>
 import SideItem from "@/components/SideItem.vue";
 
@@ -62,22 +42,52 @@ export default {
   data() {
     return {
       sidebar: [
-        /*{
-          title: "Title1",
-          list: false,
-          items: [],
-          linkEnabled: true,
-        },*/
         {
-          title: "Title2",
+          title: "VueJs",
+          isList: false,
+          items: [],
+          link: "about",
+        },
+        {
+          title: "AWS",
           isList: true,
           subList: [
             {
-              subTitle: "subTitle-1",
+              subTitle: "S3 web hosting",
               link: "page1",
             },
             {
-              subTitle: "subtitle-2",
+              subTitle: "Presigned Url",
+              link: "page2",
+            },
+          ],
+          linkEnabled: false,
+        },
+        {
+          title: "GraalVm",
+          isList: true,
+          subList: [
+            {
+              subTitle: "Native image",
+              link: "page1",
+            },
+            {
+              subTitle: "Tracing agent",
+              link: "page2",
+            },
+          ],
+          linkEnabled: false,
+        },
+        {
+          title: "Java",
+          isList: true,
+          subList: [
+            {
+              subTitle: "Java8",
+              link: "page1",
+            },
+            {
+              subTitle: "Java11",
               link: "page2",
             },
           ],
@@ -88,3 +98,24 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+body {
+  margin: 0;
+}
+
+.content {
+  margin-left: 250px;
+}
+
+.side-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+</style>
